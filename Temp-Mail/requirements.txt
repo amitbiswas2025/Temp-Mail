@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+aiohttp
+cloudscraper
+beautifulsoup4
+brotli
+zstandard
+python-telegram-bot[ext]
+python-dotenv
+flask

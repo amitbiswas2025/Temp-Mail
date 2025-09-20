@@ -1,0 +1,5 @@
+web: python3 main.py
+bot: python3 bot.py
+all: python3 start.py
+keepalive: python3 start.py --with-keepalive
+replit: python3 replit_main.py

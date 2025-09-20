@@ -1,0 +1,123 @@
+# Smart TempMail - Replit Deployment Guide
+# Copyright @ISmartCoder
+
+# This file contains deployment instructions for Replit
+# Follow these steps to deploy your Smart TempMail project
+
+"""
+🌟 SMART TEMPMAIL - REPLIT DEPLOYMENT GUIDE 🌟
+
+Follow these steps to deploy your project on Replit:
+
+STEP 1: CREATE REPLIT PROJECT
+=============================
+1. Go to https://replit.com
+2. Click "Create Repl"
+3. Choose "Import from GitHub" or "Upload files"
+4. If importing: paste your GitHub repo URL
+5. If uploading: upload all project files
+6. Name your repl (e.g., "smart-tempmail")
+
+STEP 2: CONFIGURE ENVIRONMENT
+============================
+1. Click on "Secrets" tab in Replit sidebar
+2. Add the following secrets:
+
+   Key: BOT_TOKEN
+   Value: your_telegram_bot_token_from_botfather
+
+   Key: API_URL  
+   Value: https://your-repl-name.your-username.repl.co
+
+   Optional secrets:
+   Key: KEEP_ALIVE_PORT
+   Value: 8080
+
+   Key: LOG_LEVEL
+   Value: INFO
+
+STEP 3: UPDATE REPLIT CONFIGURATION
+==================================
+The following files are already configured:
+- .replit (run configuration)
+- replit.nix (dependencies)
+- replit_main.py (optimized startup)
+
+STEP 4: INSTALL DEPENDENCIES
+===========================
+Dependencies will auto-install from requirements.txt
+If manual installation needed, use Shell tab:
+> pip install -r requirements.txt
+
+STEP 5: RUN THE PROJECT
+======================
+1. Click the green "Run" button
+2. Or use Shell: python replit_main.py
+3. Wait for all services to start
+
+STEP 6: GET YOUR URLs
+====================
+After starting, you'll see:
+🌐 Web Interface: https://your-repl.repl.co
+❤️  Keep-Alive: https://your-repl.repl.co:8080  
+🤖 Bot: Your Telegram bot will be live
+
+STEP 7: KEEP REPL ALIVE
+======================
+Replit may sleep your repl after inactivity.
+The keep-alive server prevents this by:
+- Running on port 8080
+- Providing health endpoints
+- Automatic ping responses
+
+STEP 8: TEST YOUR DEPLOYMENT
+===========================
+1. Visit your repl URL - should show API docs
+2. Test Telegram bot with /start command
+3. Check keep-alive: https://your-repl.repl.co:8080/health
+
+TROUBLESHOOTING
+==============
+❌ Bot not responding?
+   - Check BOT_TOKEN in Secrets
+   - Verify bot is started with @BotFather
+
+❌ API errors?
+   - Check Console for error messages
+   - Verify all dependencies installed
+
+❌ Repl keeps sleeping?
+   - Keep-alive should prevent this
+   - Check https://your-repl.repl.co:8080/ping
+
+❌ Import errors?
+   - Run: pip install -r requirements.txt
+   - Check Python version (should be 3.11+)
+
+REPLIT-SPECIFIC FEATURES
+=======================
+✅ Auto-restart on crash
+✅ Built-in keep-alive server
+✅ Environment variable management
+✅ Automatic dependency installation
+✅ Real-time logs and monitoring
+
+DEPLOYMENT CHECKLIST
+====================
+□ Created Replit account
+□ Uploaded all project files
+□ Added BOT_TOKEN to Secrets
+□ Updated API_URL in Secrets
+□ Clicked Run button
+□ Verified web interface works
+□ Tested Telegram bot
+□ Confirmed keep-alive is working
+
+SUPPORT
+=======
+Developer: @ISmartCoder
+Updates: @WeSmartDevelopers
+Community: @TheSmartDev
+
+Happy hosting! 🚀
+"""
